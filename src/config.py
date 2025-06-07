@@ -65,6 +65,9 @@ for entity_name, entity_activated in all_entities:
         entity_module_ids = presets.get(entity_name, [])
         active_module_ids.extend(entity_module_ids)
 
+# Filter out duplicates from the list of active module IDs.
+active_module_ids = list(set(active_module_ids))
+
 sly.logger.info(
     f"Module IDs loaded: {active_module_ids}. These modules will be used to launch tasks."
 )

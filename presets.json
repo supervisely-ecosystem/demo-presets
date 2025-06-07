@@ -1,3 +1,6 @@
 {
-  "images": [95]
+  "images": [95, 315, 327],
+  "videos": [315, 342, 283, 312],
+  "volumes": [50, 315],
+  "pointclouds": []
 }
