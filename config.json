@@ -26,8 +26,7 @@
     "icon_background": "#FFFFFF",
     "context_menu": {
         "target": [
-            "videos_project",
-            "videos_dataset"
+            "ecosystem"
         ]
     },
     "poster": "https://user-images.githubusercontent.com/48245050/182394924-5cacdc8d-25cf-41db-a98a-24b6adcbfbd0.png"
