@@ -9,6 +9,54 @@
     >
       <i class="zmdi zmdi-image"></i>
     </sly-icon>
-    <el-checkbox v-model="state.images"></el-checkbox>
+    <el-switch v-model="state.images"></el-switch>
+  </sly-field>
+  <sly-field
+    title="Videos Demo"
+    description="Enable if the the demo is related to videos modality."
+  >
+    <sly-icon
+      slot="icon"
+      :options="{ color: '#4977ff', bgColor: '#ddf2ff', rounded: false }"
+    >
+      <i class="zmdi zmdi-videocam"></i>
+    </sly-icon>
+    <el-switch v-model="state.videos"></el-switch>
+  </sly-field>
+  <sly-field
+    title="Volumes Demo"
+    description="Enable if the the demo is related to volumes modality."
+  >
+    <sly-icon
+      slot="icon"
+      :options="{ color: '#4977ff', bgColor: '#ddf2ff', rounded: false }"
+    >
+      <i class="zmdi zmdi-hospital"></i>
+    </sly-icon>
+    <el-switch v-model="state.volumes"></el-switch>
+  </sly-field>
+  <sly-field
+    title="PointClouds Demo"
+    description="Enable if the the demo is related to pointclouds modality."
+  >
+    <sly-icon
+      slot="icon"
+      :options="{ color: '#4977ff', bgColor: '#ddf2ff', rounded: false }"
+    >
+      <i class="zmdi zmdi-directions-car"></i>
+    </sly-icon>
+    <el-switch v-model="state.pointclouds"></el-switch>
+  </sly-field>
+  <sly-field
+    title="Stop all demo sessions"
+    description="Enable this to stop all the demo sessions, new tasks will not be created."
+  >
+    <sly-icon
+      slot="icon"
+      :options="{ color: '#b31e5c', bgColor: '#ddf2ff', rounded: false }"
+    >
+      <i class="zmdi zmdi-block"></i>
+    </sly-icon>
+    <el-switch v-model="state.stoppingSession"></el-switch>
   </sly-field>
 </div>
