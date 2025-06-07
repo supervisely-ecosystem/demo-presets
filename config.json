@@ -22,7 +22,7 @@
     "task_location": "workspace_tasks",
     "isolate": true,
     "headless": true,
-    "icon": "https://i.imgur.com/aINxyST.png",
+    "icon": "https://github.com/supervisely-ecosystem/demo-presets/releases/download/sly-release-v0.0.9/demo_icon.jpeg",
     "icon_background": "#FFFFFF",
     "context_menu": {
         "target": [
@@ -30,5 +30,5 @@
         ]
     },
     "gpu": "required",
-    "poster": "https://user-images.githubusercontent.com/48245050/182394924-5cacdc8d-25cf-41db-a98a-24b6adcbfbd0.png"
+    "poster": "https://github.com/supervisely-ecosystem/demo-presets/releases/download/sly-release-v0.0.9/poster.png"
 }
