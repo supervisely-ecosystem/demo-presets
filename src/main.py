@@ -36,7 +36,7 @@ def launch_tasks(
             module_id=module_id,
             workspace_id=workspace_id,
             description=description,
-            task_name="Task launched for demo.",
+            task_name="demo task",
         )
 
         sly.logger.info(
