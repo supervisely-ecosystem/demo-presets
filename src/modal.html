@@ -1,0 +1,14 @@
+<div>
+  <sly-field
+    title="Images Demo"
+    description="Enable if the the demo is related to images modality."
+  >
+    <sly-icon
+      slot="icon"
+      :options="{ color: '#4977ff', bgColor: '#ddf2ff', rounded: false }"
+    >
+      <i class="zmdi zmdi-image"></i>
+    </sly-icon>
+    <el-switch v-model="state.Images"></el-switch>
+  </sly-field>
+</div>

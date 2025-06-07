@@ -1,0 +1,34 @@
+{
+    "name": "Launch tasks for Demo",
+    "type": "app",
+    "categories": [
+        "images",
+        "videos",
+        "volumes",
+        "pointclouds"
+    ],
+    "description": "Launch a set of tasks based on the selected preset for dirrerent modalities.",
+    "docker_image": "supervisely/base-py-sdk:latest",
+    "instance_version": "6.12.50",
+    "main_script": "src/main.py",
+    "modal_template": "src/modal.html",
+    "modal_template_state": {
+        "images": "true",
+        "videos": "false",
+        "volumes": "false",
+        "pointclouds": "false",
+        "stoppingSession": "false"
+    },
+    "task_location": "workspace_tasks",
+    "isolate": true,
+    "headless": true,
+    "icon": "https://i.imgur.com/aINxyST.png",
+    "icon_background": "#FFFFFF",
+    "context_menu": {
+        "target": [
+            "videos_project",
+            "videos_dataset"
+        ]
+    },
+    "poster": "https://user-images.githubusercontent.com/48245050/182394924-5cacdc8d-25cf-41db-a98a-24b6adcbfbd0.png"
+}

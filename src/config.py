@@ -20,7 +20,7 @@ sly.logger.info(
     f"Agent ID={active_agent_id}."
 )
 
-stopping_session = os.getenv("modal.state.stopping_session", "false").lower() == "true"
+stopping_session = os.getenv("modal.state.stoppingSession", "false").lower() == "true"
 if stopping_session:
     sly.logger.info(
         "The app is launched in stopping session mode. Will find all the tasks "
