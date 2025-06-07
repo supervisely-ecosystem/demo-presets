@@ -3,6 +3,7 @@ from typing import List
 import supervisely as sly
 
 from src.config import (
+    SKIPPABLE_STATUSES,
     TASK_DESCR,
     active_agent_id,
     active_module_ids,
@@ -57,6 +58,8 @@ def find_and_stop_tasks(workspace_id: int, description: str) -> None:
     tasks = api.task.get_list(workspace_id=workspace_id)
     for task in tasks:
         if task.get("description") == description:
+            if task.get("status") in SKIPPABLE_STATUSES:
+                continue
             task_id = task.get("id")
             try:
                 api.task.stop(task_id)

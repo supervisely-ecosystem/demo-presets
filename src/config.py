@@ -5,6 +5,7 @@ import supervisely as sly
 from dotenv import load_dotenv
 
 TASK_DESCR = "task_for_demo"
+SKIPPABLE_STATUSES = ["stopped", "error"]
 
 if sly.is_development():
     load_dotenv(os.path.expanduser("~/supervisely-demo.env"))
@@ -44,7 +45,9 @@ sly.logger.info(
     f"volumes_modal={volumes_modal}, pointclouds_modal={pointclouds_modal}."
 )
 
-presets_json = os.path.join(os.getcwd(), "presets.json")
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+presets_json = os.path.join(parent_dir, "presets.json")
 if not os.path.exists(presets_json):
     raise FileNotFoundError(
         f"Presets file not found: {presets_json}. "
