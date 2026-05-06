@@ -9,7 +9,7 @@
     ],
     "description": "Launch a set of tasks based on the selected preset for dirrerent modalities.",
     "docker_image": "supervisely/base-py-sdk:6.73.564",
-    "instance_version": "6.12.50",
+    "instance_version": "6.15.60",
     "main_script": "src/main.py",
     "modal_template": "src/modal.html",
     "modal_template_state": {
