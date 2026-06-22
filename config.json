@@ -1,34 +1,34 @@
 {
-    "name": "Launch tasks for Demo",
-    "type": "app",
-    "categories": [
-        "images",
-        "videos",
-        "volumes",
-        "pointclouds"
-    ],
-    "description": "Launch a set of tasks based on the selected preset for dirrerent modalities.",
-    "docker_image": "supervisely/base-py-sdk:latest",
-    "instance_version": "6.12.50",
-    "main_script": "src/main.py",
-    "modal_template": "src/modal.html",
-    "modal_template_state": {
-        "images": "true",
-        "videos": "false",
-        "volumes": "false",
-        "pointclouds": "false",
-        "stoppingSession": "false"
-    },
-    "task_location": "workspace_tasks",
-    "isolate": true,
-    "headless": true,
-    "icon": "https://github.com/supervisely-ecosystem/demo-presets/releases/download/sly-release-v0.0.9/demo_icon.jpeg",
-    "icon_background": "#FFFFFF",
-    "context_menu": {
-        "target": [
-            "ecosystem"
-        ]
-    },
-    "gpu": "required",
-    "poster": "https://github.com/supervisely-ecosystem/demo-presets/releases/download/sly-release-v0.0.9/poster.png"
+  "name": "Launch tasks for Demo",
+  "type": "app",
+  "categories": [
+    "images",
+    "videos",
+    "volumes",
+    "pointclouds"
+  ],
+  "description": "Launch a set of tasks based on the selected preset for dirrerent modalities.",
+  "docker_image": "supervisely/base-py-sdk-hardened:6.73.564",
+  "instance_version": "6.15.60",
+  "main_script": "src/main.py",
+  "modal_template": "src/modal.html",
+  "modal_template_state": {
+    "images": "true",
+    "videos": "false",
+    "volumes": "false",
+    "pointclouds": "false",
+    "stoppingSession": "false"
+  },
+  "task_location": "workspace_tasks",
+  "isolate": true,
+  "headless": true,
+  "icon": "https://github.com/supervisely-ecosystem/demo-presets/releases/download/sly-release-v0.0.9/demo_icon.jpeg",
+  "icon_background": "#FFFFFF",
+  "context_menu": {
+    "target": [
+      "ecosystem"
+    ]
+  },
+  "gpu": "required",
+  "poster": "https://github.com/supervisely-ecosystem/demo-presets/releases/download/sly-release-v0.0.9/poster.png"
 }
